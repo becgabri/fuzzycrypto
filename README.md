@@ -6,7 +6,7 @@ This repository contains research code for benchmarking the FMD2 and FracFMD sch
 
 ## Notes on Repo
 
-The interface for FMD is defined in _scheme.go_. The package *toygarble* contains code to garble a circuit in Bristol format. The directory *c2c-converter* contains files related to the CBMCGCC compiler which can take in C programs and output Boolean circuits. They also provide the ability to output files in Bristol (which we make use of). 
+The interface for FMD is defined in _scheme.go_. The package _toygarble_ contains code to garble a circuit provided in Bristol format. The directory _c2c-converter_ contains files related to the CBMCGCC compiler which can take in C programs and output Boolean circuits. They also provide the ability to output files in Bristol (which we make use of). 
 
       
 
