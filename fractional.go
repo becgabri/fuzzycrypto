@@ -1,15 +1,15 @@
 package fuzzycrypto
 
-import(
+import (
     "bytes"
     "crypto/elliptic"
     "crypto/sha256"
     "fmt"
     "github.com/becgabri/fuzzycrypto/toygarble"
+    "io"
     "math"
     "math/big"
     "math/rand"
-    "io"   
     "os"
     "strconv"
 )
@@ -17,8 +17,6 @@ import(
 const SECURITYPARAM int = 40
 
 var CIRCUITFILES []string = []string{"48Num8Mod.circ","64Num24Mod.circ"}
-// First things first... need the uniformly ambiguous
-// CPA scheme -- can I just take this from somewhere ??? 
 
 
 type Fractional struct {
